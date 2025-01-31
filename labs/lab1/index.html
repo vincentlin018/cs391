@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website that displays age-restricted content">
+        <link rel="stylesheet" href="style.css">
+        <title>Age-Restricted Website</title>
+    </head>
+    <body>
+        <label for="age-input">How old are you?</label><input id="age-input">
+        <button onclick="checkAge()">Submit</button>
+
+        <div id="main-content">
+            <img id="profile-image" src="profile.JPG" alt="Vincent Lin's profile picture">
+
+            <p>The picture display is of Vincent Lin and he is smiling in front of the street</p>
+        </div>
+        <div id = "error-content">
+            <p id="error-message"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

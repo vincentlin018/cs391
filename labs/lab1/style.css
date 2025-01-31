@@ -1,0 +1,8 @@
+#main-content,
+#error-content {
+    display: none;
+}
+
+#error-message {
+    color: red;
+}
