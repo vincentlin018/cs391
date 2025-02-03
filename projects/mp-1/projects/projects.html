@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A website that displays Vincent Lin's projects">
+    <link type="text/css" rel="stylesheet" href="projects.css">
+    <title>Projects</title>
+</head>
+<body>
+
+    <div id = "calculator">
+        <div id="flex">
+            <div class="input-group">
+                <input id="first-input" placeholder="">
+                <label for="first-input">First Number</label>
+            </div>
+
+            <div class="input-group">
+                <input id="second-input" placeholder="">
+                <label for="second-input">Second Number</label>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button onclick="addition()">+</button>
+            <button onclick="subtraction()">-</button>
+            <button onclick="multiplication()">*</button>
+            <button onclick="division()">/</button>
+            <button onclick="exponentiation()">**</button>
+            <button onclick="clearCalculator()" class="clearButton">C</button>
+        </div>
+
+
+        <div id="output">
+            <p id="output-content"></p>
+        </div>
+        </div>
+    <script src="projects.js"></script>
+</body>
+</html>
