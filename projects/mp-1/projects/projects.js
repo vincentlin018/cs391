@@ -18,9 +18,11 @@ function addition() {
 
 
     if (errorMessage === "") {
-        document.getElementById("output-content").innerHTML = String(output);
+        document.getElementById("output-content").textContent = String(output);
+        document.getElementById("output-content").style.color = output < 0 ? 'red' : 'white';
     } else {
-        document.getElementById("output-content").innerHTML = errorMessage;
+        document.getElementById("output-content").textContent = errorMessage;
+        document.getElementById("output-content").style.color = 'white';
     }
 }
 
@@ -41,9 +43,11 @@ function subtraction() {
     }
 
     if (errorMessage === "") {
-        document.getElementById("output-content").innerHTML = String(output);
+        document.getElementById("output-content").textContent = String(output);
+        document.getElementById("output-content").style.color = output < 0 ? 'red' : 'white';
     } else {
-        document.getElementById("output-content").innerHTML = errorMessage;
+        document.getElementById("output-content").textContent = errorMessage;
+        document.getElementById("output-content").style.color = 'white';
     }
 }
 
@@ -64,9 +68,11 @@ function multiplication() {
     }
 
     if (errorMessage === "") {
-        document.getElementById("output-content").innerHTML = String(output);
+        document.getElementById("output-content").textContent = String(output);
+        document.getElementById("output-content").style.color = output < 0 ? 'red' : 'white';
     } else {
-        document.getElementById("output-content").innerHTML = errorMessage;
+        document.getElementById("output-content").textContent = errorMessage;
+        document.getElementById("output-content").style.color = 'white';
     }
 }
 
@@ -87,9 +93,11 @@ function division() {
     }
 
     if (errorMessage === "") {
-        document.getElementById("output-content").innerHTML = String(output);
+        document.getElementById("output-content").textContent = String(output);
+        document.getElementById("output-content").style.color = output < 0 ? 'red' : 'white';
     } else {
-        document.getElementById("output-content").innerHTML = errorMessage;
+        document.getElementById("output-content").textContent = errorMessage;
+        document.getElementById("output-content").style.color = 'white';
     }
 }
 
@@ -121,14 +129,16 @@ function exponentiation() {
         }
     }
     if (errorMessage === "") {
-        document.getElementById("output-content").innerHTML = String(output);
+        document.getElementById("output-content").textContent = String(output);
+        document.getElementById("output-content").style.color = output < 0 ? 'red' : 'white';
     } else {
-        document.getElementById("output-content").innerHTML = errorMessage;
+        document.getElementById("output-content").textContent = errorMessage;
+        document.getElementById("output-content").style.color = 'white';
     }
 }
 
 function clearCalculator() {
     document.getElementById("first-input").value = "";
     document.getElementById("second-input").value = "";
-    document.getElementById("output-content").textContent = "";
+    document.getElementById("output-content").textContent = "Result";
 }

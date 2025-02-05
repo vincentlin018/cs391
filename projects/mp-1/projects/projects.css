@@ -1,61 +1,120 @@
-#main-content,
-#error-content {
-    display: none;
-}
-
-#error-message {
-    color: red;
-}
-
-#flex {
+/* Two column container starts */
+#content{
+    width: 100%;
     display: flex;
-    margin-left: auto;
-    gap: 20px;
-}
-
-.input-group {
+    flex-direction: row;
     position: relative;
+    background-color: aliceblue;
 }
 
+nav{
+    width: 25%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: orange;
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li {
+    font-size: calc(3px + 3vw);
+    width: 80%;
+    background-color: aqua;
+    padding: 2vh 0;
+    border-radius: 70px;
+    margin: 2vh auto;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: aquamarine;
+}
+
+main p {
+    margin: 0 1vw;
+    font-size: calc(2px + 2vw);
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1vh 1vw;
+}
+
+#main-text {
+    align-self: center;
+    width: 40%;
+    margin: auto;
+    font-size: calc(2px + 1vw);
+
+}
+
+#main-text ul li {
+    font-size: calc(2px + 2vw);
+}
+
+#add-info {
+    text-align: center;
+}
+
+#main-title {
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2vw);
+    color: black;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
 input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    width: 200px;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    margin-bottom: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: calc(2px + 1vw);
+
 }
 
-label {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: white;
-    padding: 0 5px;
-    color: #999;
-    pointer-events: none;
-    transition: 0.3s ease all;
-}
-
-input:focus + label,
-input:not(:placeholder-shown) + label {
-    top: 0;
-    font-size: 12px;
-    color: #333;
-    justify-content: flex-end;
-}
-
-input:focus {
-    outline: none;
-    border-color: #007bff;
+::placeholder {
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 #output {
-    background-color: #999999;
-    padding: 15px;
+    background-color: #333333;
+    padding: 1px;
     border-radius: 4px;
-    border: 1px solid #ffd6d6;
     text-align: center;
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: calc(1px + 1vw);
 }
 
 
@@ -63,34 +122,39 @@ input:focus {
     font-family: Arial, sans-serif;
     background-color: #333333;
     border-radius: 15px;
-    max-width: 500px;
+    width: 50%;
     overflow: hidden;
+    padding: 10px;
+    margin: auto;
+
 }
 
-#flex{
-    width: 100%;
-    padding: 20px;
-    font-size: calc(10px + 2px);
-    text-align: left;
-    border: none;
-    background-color: dimgray;
+#first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
 }
-
-#buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 25px;
-
+#second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px
+}
+#third-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px
 }
 button {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    width: 22%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     border: none;
     background-color: orange;
     color: white;
-    font-size: calc(10px + 2vw);
+    font-size: clamp(16px, 3vw, 24px);
     font-weight: bold;
     cursor: pointer;
 }
@@ -109,4 +173,65 @@ button:active {
 }
 .clearButton:active {
     background-color: darkgray;
+}
+
+@media screen and (max-width: 900px) {
+    #content {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: aliceblue;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li {
+        font-size: calc(2px + 1.5vw);
+        background-color: aqua;
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    main p {
+        margin: 2% 2%;
+        font-size: calc(2px + 3vw);
+    }
+
+    #calculator {
+        max-width: 100%;
+    }
+    main {
+        margin: auto;
+    }
+    #main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-text {
+        align-self: center;
+        width: 100%;
+        margin: 1vh 1vw;
+    }
+
+    #main-title {
+        text-align: center;
+        color: black;
+    }
 }
