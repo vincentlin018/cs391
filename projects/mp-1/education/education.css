@@ -61,43 +61,9 @@ main{
     flex-direction: column;
     width: 70%;
     background-color: aquamarine;
+    padding: 3vw;
 }
 
-main p {
-    margin: 0 1vw;
-    font-size: calc(10px + 1vw);
-}
-
-#profile-image{
-    max-width: 100%;
-}
-
-#main {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 1vh 1vw;
-}
-
-#main-text {
-    align-self: center;
-    width: 60%;
-    margin: 1vh 1vw;
-}
-
-#main-image {
-    width: 40%;
-    margin: 1vh 1vw;
-}
-
-#main-title {
-    margin: 2vw 0;
-    text-align: center;
-    font-size: calc(2px + 2vw);
-    color: black;
-}
-
-/* Two column container ends */
 
 footer {
     background-color: aliceblue;
@@ -108,26 +74,41 @@ footer {
     justify-content: space-evenly;
 }
 
-#time-date {
-    width: 25%;
+#title {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 1vw);
 }
 
-footer a {
-    color: aqua;
+#college {
+    display: flex;
+    flex-direction: column;
+    border-left: darkslategray 4px solid;
+    margin: 2vh 0;
+    padding-left: 1vh;
+    font-size: calc(7px + 1vw);
+}
+
+#high-school {
+    display: flex;
+    flex-direction: column;
+    border-left: darkslategray 4px solid;
+    margin: 2vh 0;
+    padding-left: 1vh;
+    font-size: calc(7px + 1vw);
 }
 
 @media screen and (max-width: 900px) {
     header {
         align-items: center;
     }
+
     #content {
         width: 100%;
         height: 100%;
         flex-direction: column;
+        margin: auto;
     }
 
     nav {
@@ -155,36 +136,9 @@ footer a {
     }
 
     main {
-        width: 100%;
+        width: 100%
     }
     main p {
-        margin: 2% 2%;
-        font-size: calc(2px + 3vw);
-    }
-
-    #profile-image {
-        max-width: 100%;
-    }
-
-    #main {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #main-text {
-        align-self: center;
-        width: 100%;
-        margin: 1vh 1vw;
-    }
-
-    #main-image {
-        margin: 1vh auto;
-    }
-
-    #main-title {
-        text-align: center;
-        color: black;
+        font-size: calc(2px + 2vw);
     }
 }

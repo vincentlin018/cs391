@@ -4,80 +4,87 @@
     <meta charset="UTF-8">
     <meta name="description" content="A website that displays Vincent Lin's projects">
     <link type="text/css" rel="stylesheet" href="projects.css">
-    <title>Projects</title>
+    <title>Projects | Resume</title>
 </head>
 <body>
+    <div id = "page-wrapper">
+        <header>
+            <h1>Vincent Lin</h1>
+            <p><em>My Online Resumes</em></p>
+        </header>
 
-
-    <div id = "content">
-        <nav>
-            <ul>
-                <li><a href="../home/index.html">Home</a></li>
-                <li><a href="../education/education.html">Education</a></li>
-                <li><a href="../experiences/experiences.html">Experiences</a></li>
-                <li><a href="../certifications/certifications.html">Certifications</a></li>
-                <li><a href="../references/references.html">References</a></li>
-                <li><a href="../achievements/achievements.html">Achievements</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <h3 id="main-title">Projects</h3>
-
-            <div id = "main">
-                <div id = "calculator">
-                    <div id="input">
-                        <input id="first-input" placeholder="First number" type="text">
-                        <label for="first-input"></label>
-
-                        <input id="second-input" placeholder="Second Number" type="text">
-                        <label for="second-input"></label>
-                    </div>
-
-                    <div id="buttons">
-                        <div id = "first-row">
-                            <button onclick="addition()">+</button>
-                            <button onclick="subtraction()">-</button>
-                        </div>
-                        <div id = "second-row">
-                            <button onclick="multiplication()">*</button>
-                            <button onclick="division()">/</button>
-                        </div>
-                        <div id = "third-row">
-                            <button onclick="exponentiation()">**</button>
-                            <button onclick="clearCalculator()" class="clearButton">C</button>
-                        </div>
-                    </div>
-                    <div id="output">
-                        <p id="output-content" class="negative-output">Result</p>
-                    </div>
-                </div>
-
-                <div id = "main-text">
-                    <p> Welcome to me projects page. Here you will find a calculator that I have been working one that
-                        includes arithmetic operations such as:
-                    </p>
+        <div id = "content">
+            <nav>
                 <ul>
-                    <li>Addition</li>
-                    <li>Subtraction</li>
-                    <li>Multiplication</li>
-                    <li>Division</li>
-                    <li>Exponentiation</li>
+                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../education/education.html">Education</a></li>
+                    <li><a href="../experiences/experiences.html">Experiences</a></li>
+                    <li><a href="../certifications/certifications.html">Certifications</a></li>
+                    <li><a href="../references/references.html">References</a></li>
+                    <li><a href="../achievements/achievements.html">Achievements</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                 </ul>
+            </nav>
+
+            <main>
+                <h3 id="main-title">Projects</h3>
+
+                <div id = "main">
+                    <div id = "calculator">
+                        <div id="input">
+                            <input id="first-input" placeholder="First number" type="text">
+                            <label for="first-input"></label>
+
+                            <input id="second-input" placeholder="Second Number" type="text">
+                            <label for="second-input"></label>
+                        </div>
+
+                        <div id="buttons">
+                            <div id = "first-row">
+                                <button onclick="addition()">+</button>
+                                <button onclick="subtraction()">-</button>
+                            </div>
+                            <div id = "second-row">
+                                <button onclick="multiplication()">*</button>
+                                <button onclick="division()">/</button>
+                            </div>
+                            <div id = "third-row">
+                                <button onclick="exponentiation()">**</button>
+                                <button onclick="clearCalculator()" class="clearButton">C</button>
+                            </div>
+                        </div>
+                        <div id="output">
+                            <p id="output-content" class="negative-output">Result</p>
+                        </div>
+                    </div>
+
+                    <div id = "main-text">
+                        <p> Welcome to me projects page. Here you will find a calculator that I have been working one that
+                            includes arithmetic operations such as:
+                        </p>
+                    <ul>
+                        <li>Addition</li>
+                        <li>Subtraction</li>
+                        <li>Multiplication</li>
+                        <li>Division</li>
+                        <li>Exponentiation</li>
+                    </ul>
+                    </div>
+
+                </div>
+                <div id = "add-info">
+                    <p>Further down, you will find information about my other projects that I have done in the past.</p>
                 </div>
 
-            </div>
-            <div id = "add-info">
-                <p>Further down, you will find information about my other projects that I have done in the past.</p>
-            </div>
+            </main>
 
-        </main>
+        </div>
 
+        <footer>
+            <p>All Rights Reserved by Vincent Lin <a href="../credits/credits.html">Credits</a>&copy;</p>
+        </footer>
+
+        <script src="projects.js"></script>
     </div>
-    <footer>
-        <p>All Rights Reserved by Vincent Lin <a href="../credits/credits.html">Credits</a>&copy;</p>
-    </footer>
-    <script src="projects.js"></script>
 </body>
 </html>
