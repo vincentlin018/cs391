@@ -1,15 +1,16 @@
+/* Reset default margin and set box-sizing */
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Centering the page */
+/* Center the page content */
 #page-wrapper {
     width: 80vw;
     margin: 0 auto;
 }
 
-/* Header starts */
+/* Header styles */
 header {
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@ header {
     align-items: flex-start;
 }
 
-/* Two column container starts */
+/* Two-column container styles */
 #content {
     width: 100%;
     display: flex;
@@ -28,6 +29,7 @@ header {
     background-color: #222222;
 }
 
+/* Navigation styles */
 nav {
     width: 30%;
 }
@@ -56,6 +58,7 @@ nav a {
     color: black;
 }
 
+/* Main content area styles */
 main {
     display: flex;
     flex-direction: column;
@@ -69,10 +72,12 @@ main p {
     color: white;
 }
 
+/* Profile image styles */
 #profile-image {
     max-width: 100%;
 }
 
+/* Main section layout */
 #main {
     width: 100%;
     display: flex;
@@ -98,8 +103,7 @@ main p {
     color: white;
 }
 
-/* Two column container ends */
-
+/* Footer styles */
 footer {
     background-color: #222222;
     color: white;
@@ -118,16 +122,21 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Media query for responsive design */
 @media screen and (max-width: 900px) {
+    /* Adjust header alignment */
     header {
         align-items: center;
     }
+
+    /* Change layout to single column */
     #content {
         width: 100%;
         height: 100%;
         flex-direction: column;
     }
 
+    /* Adjust navigation for mobile */
     nav {
         width: 100%;
     }
@@ -153,19 +162,23 @@ footer a:hover {
         color: black;
     }
 
+    /* Adjust main content area for mobile */
     main {
         width: 100%;
     }
+
     main p {
         margin: 2% 2%;
         font-size: calc(2px + 3vw);
         color: white;
     }
 
+    /* Adjust profile image for mobile */
     #profile-image {
         max-width: 100%;
     }
 
+    /* Change main section layout for mobile */
     #main {
         width: 100%;
         display: flex;
