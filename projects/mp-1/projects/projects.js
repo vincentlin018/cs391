@@ -141,4 +141,5 @@ function clearCalculator() {
     document.getElementById("first-input").value = "";
     document.getElementById("second-input").value = "";
     document.getElementById("output-content").textContent = "Result";
+    document.getElementById("output-content").style.color = 'white';
 }

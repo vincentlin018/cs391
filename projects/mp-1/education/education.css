@@ -14,8 +14,8 @@ header{
     display: flex;
     flex-direction: column;
     padding: 1vh 1vw;
-    background-color: aliceblue;
-    color: black;
+    background-color: #222222;
+    color: white;
     align-items: flex-start;
 }
 
@@ -25,7 +25,7 @@ header{
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: aliceblue;
+    background-color: #222222;
 }
 
 nav{
@@ -36,42 +36,52 @@ nav ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: aliceblue;
+    background-color: #312f36;
     font-size: calc(2px + 2vw);
     text-align: center;
     list-style: none;
     padding-left: 0;
+
 }
 
 nav li {
     font-size: calc(2px + 2vw);
     width: 90%;
-    background-color: aqua;
+    background-color: white;
     padding: 2vh 0;
-    margin: 2vh auto;
-    border-radius: 70px;
+    margin: 5vh auto;
 }
 
 nav a {
     text-decoration: none;
+    color: black;
 }
 
 main{
     display: flex;
     flex-direction: column;
     width: 70%;
-    background-color: aquamarine;
+    background-color: #334464;
     padding: 3vw;
 }
 
 
 footer {
-    background-color: aliceblue;
-    color: black;
+    background-color: #222222;
+    color: white;
     padding: 1vh 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 #title {
@@ -79,25 +89,59 @@ footer {
     flex-direction: column;
     align-items: center;
     font-size: calc(10px + 1vw);
+    color: white;
 }
 
 #college {
     display: flex;
     flex-direction: column;
-    border-left: darkslategray 4px solid;
+    border-left: #ddd8ce 4px solid;
     margin: 2vh 0;
     padding-left: 1vh;
     font-size: calc(7px + 1vw);
+    color: white;
 }
 
 #high-school {
     display: flex;
     flex-direction: column;
-    border-left: darkslategray 4px solid;
+    border-left: #ddd8ce 4px solid;
     margin: 2vh 0;
     padding-left: 1vh;
     font-size: calc(7px + 1vw);
+    color: white;
 }
+
+#bu-picture {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#bu-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+#nqhs-picture {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#nqhs-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
 
 @media screen and (max-width: 900px) {
     header {
@@ -119,14 +163,14 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: aliceblue;
+        background-color: #312f36;
         list-style: none;
         padding-left: 0;
     }
 
     nav li {
         font-size: calc(2px + 1.5vw);
-        background-color: aqua;
+        background-color: white;
         padding: 1% .5%;
         margin: 1% .5%;
     }
