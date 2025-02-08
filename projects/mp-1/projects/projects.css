@@ -101,7 +101,7 @@ main p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: calc(10px + 1vw);
+    font-size: calc(2px + 2vw);
     color: white;
     margin-bottom: 3vh;
 }
@@ -313,6 +313,7 @@ footer a:hover {
 
     #main-title {
         text-align: center;
-        color: black;
+        color: white;
+        font-size: calc(10px + 2vw);
     }
 }
