@@ -26,7 +26,7 @@ header {
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: #222222;
+    background-color: #334464;
 }
 
 /* Navigation styles */
@@ -99,7 +99,7 @@ main p {
 #main-title {
     margin: 2vw 0;
     text-align: center;
-    font-size: calc(2px + 2vw);
+    font-size: calc(6px + 2vw);
     color: white;
 }
 
@@ -134,7 +134,7 @@ footer a:hover {
     /* Change layout to single column */
     #content {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         flex-direction: column;
     }
 
@@ -171,7 +171,7 @@ footer a:hover {
 
     main p {
         margin: 2% 2%;
-        font-size: calc(2px + 3vw);
+        font-size: calc(2px + 2vw);
         color: white;
     }
 
