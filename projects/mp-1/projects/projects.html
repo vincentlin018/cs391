@@ -1,86 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="A website that displays Vincent Lin's projects">
-    <link type="text/css" rel="stylesheet" href="projects.css">
-    <title>Projects | Resume</title>
-</head>
-<body>
-    <div id = "page-wrapper">
-        <header>
-            <h1>Vincent Lin</h1>
-            <p><em>My Online Resumes</em></p>
-        </header>
+    <!-- The head that includes information about the website (optimization for SEO, displays the title and links the css file -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website that displays Vincent Lin's projects">
+        <link type="text/css" rel="stylesheet" href="projects.css">
+        <title>Projects | Resume</title>
+    </head>
 
-        <div id = "content">
-            <nav>
-                <ul>
-                    <li><a href="../home/index.html">Home</a></li>
-                    <li><a href="../education/education.html">Education</a></li>
-                    <li><a href="../experiences/experiences.html">Experiences</a></li>
-                    <li><a href="../certifications/certifications.html">Certifications</a></li>
-                    <li><a href="../references/references.html">References</a></li>
-                    <li><a href="../achievements/achievements.html">Achievements</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </nav>
+    <body>
+        <!-- Main Wrapper for the entire page -->
+        <div id = "page-wrapper">
+            <!-- Header section with name and tagline -->
+            <header>
+                <h1>Vincent Lin</h1>
+                <p><em>My Online Resumes</em></p>
+            </header>
 
-            <main>
-                <h3 id="main-title">Projects</h3>
+            <!-- Content wrapper for main centent and navigation -->
+            <div id = "content">
+                <!-- Navigation menu -->
+                <nav>
+                    <ul>
+                        <li><a href="../home/index.html">Home</a></li>
+                        <li><a href="../education/education.html">Education</a></li>
+                        <li><a href="../experiences/experiences.html">Experiences</a></li>
+                        <li><a href="../certifications/certifications.html">Certifications</a></li>
+                        <li><a href="../references/references.html">References</a></li>
+                        <li><a href="../achievements/achievements.html">Achievements</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </nav>
 
-                <div id = "main">
-                    <div id = "calculator">
-                        <div id="input">
-                            <input id="first-input" placeholder="First number" type="text">
-                            <label for="first-input"></label>
+                <!-- Main content area -->
+                <main>
+                    <!-- Title for the Projects section -->
+                    <h3 id="main-title">Projects</h3>
 
-                            <input id="second-input" placeholder="Second Number" type="text">
-                            <label for="second-input"></label>
+                    <!-- Calculator section -->
+                    <div id = "main">
+                        <div id = "calculator">
+                            <!-- The two input fields for the calculator -->
+                            <div id="input">
+                                <input id="first-input" placeholder="First number" type="text">
+                                <label for="first-input"></label>
+
+                                <input id="second-input" placeholder="Second Number" type="text">
+                                <label for="second-input"></label>
+                            </div>
+
+                            <!-- Calculator Buttons -->
+                            <!-- Divided in three rows with two buttons each -->
+                            <!-- Calls a JavaScript Function upon click -->
+                            <div id="buttons">
+
+                                <div id = "first-row">
+                                    <button onclick="addition()">+</button>
+                                    <button onclick="subtraction()">-</button>
+                                </div>
+
+                                <div id = "second-row">
+                                    <button onclick="multiplication()">*</button>
+                                    <button onclick="division()">/</button>
+                                </div>
+
+                                <div id = "third-row">
+                                    <button onclick="exponentiation()">**</button>
+                                    <button onclick="clearCalculator()" class="clearButton">C</button>
+                                </div>
+
+                            </div>
+                            <!-- Output display for the calculator -->
+                            <div id="output">
+                                <p id="output-content" class="negative-output">Result</p>
+                            </div>
+
                         </div>
 
-                        <div id="buttons">
-                            <div id = "first-row">
-                                <button onclick="addition()">+</button>
-                                <button onclick="subtraction()">-</button>
-                            </div>
-                            <div id = "second-row">
-                                <button onclick="multiplication()">*</button>
-                                <button onclick="division()">/</button>
-                            </div>
-                            <div id = "third-row">
-                                <button onclick="exponentiation()">**</button>
-                                <button onclick="clearCalculator()" class="clearButton">C</button>
-                            </div>
+                        <!-- Project description -->
+                        <div id = "main-text">
+
+                            <p> Welcome to my projects page. Here you will find a calculator that I have been working on that
+                                includes arithmetic operations such as:
+                            </p>
+
+                            <!-- A list that includes the operations of the calculator -->
+                            <ul>
+                                <li>Addition</li>
+                                <li>Subtraction</li>
+                                <li>Multiplication</li>
+                                <li>Division</li>
+                                <li>Exponentiation</li>
+                            </ul>
+
                         </div>
-                        <div id="output">
-                            <p id="output-content" class="negative-output">Result</p>
-                        </div>
+
                     </div>
 
-                    <div id = "main-text">
-                        <p> Welcome to my projects page. Here you will find a calculator that I have been working on that
-                            includes arithmetic operations such as:
-                        </p>
-                        <ul>
-                            <li>Addition</li>
-                            <li>Subtraction</li>
-                            <li>Multiplication</li>
-                            <li>Division</li>
-                            <li>Exponentiation</li>
-                        </ul>
-                    </div>
+                </main>
 
-                </div>
-            </main>
-
+            </div>
+            <!-- Footer section -->
+            <footer>
+                <p>All Rights Reserved by Vincent Lin <a href="../credits/credits.html">Credits</a>&copy;</p>
+            </footer>
+            <!-- JavaScript file for calculator functionality -->
+            <script src="projects.js"></script>
         </div>
-
-        <footer>
-            <p>All Rights Reserved by Vincent Lin <a href="../credits/credits.html">Credits</a>&copy;</p>
-        </footer>
-
-        <script src="projects.js"></script>
-    </div>
-</body>
+    </body>
 </html>

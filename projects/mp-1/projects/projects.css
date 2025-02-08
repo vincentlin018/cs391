@@ -1,3 +1,4 @@
+/* Reset default margin and set box-sizing for all elements */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -5,13 +6,13 @@
 
 
 /* Centering the page */
-#page-wrapper{
+#page-wrapper {
     width: 80vw;
     margin: 0 auto;
 }
 
 /* Header starts */
-header{
+header {
     display: flex;
     flex-direction: column;
     padding: 1vh 1vw;
@@ -22,7 +23,7 @@ header{
 
 
 /* Two column container starts */
-#content{
+#content {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -30,11 +31,12 @@ header{
     background-color: #222222;
 }
 
-nav{
+/* Navigation styles */
+nav {
     width: 30%;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -58,7 +60,8 @@ nav a {
     color: black;
 }
 
-main{
+/* Main content area styles */
+main {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -71,6 +74,7 @@ main p {
     font-size: calc(10px + 1vw);
 }
 
+/* Main section layout */
 #main {
     width: 100%;
     display: flex;
@@ -78,6 +82,7 @@ main p {
     padding: 2vh 1vw;
 }
 
+/* Main text styles */
 #main-text {
     width: 100%;
     font-size: calc(10px + 1vw);
@@ -91,6 +96,7 @@ main p {
     margin: 1vh;
 }
 
+/* Main title styles */
 #main-title {
     display: flex;
     flex-direction: column;
@@ -100,6 +106,7 @@ main p {
     margin-bottom: 3vh;
 }
 
+/* Calculator input styles */
 #input {
     display: flex;
     flex-direction: column;
@@ -108,6 +115,7 @@ main p {
     width: 70%;
     margin: auto;
 }
+
 input {
     width: 100%;
     height: 40px;
@@ -122,11 +130,13 @@ input {
     font-size: calc(2px + 1vw);
 }
 
+/* Placeholder styles for the text that is preloaded in the input boxes*/
 ::placeholder {
     color: white;
     font-family: Arial, sans-serif;
 }
 
+/* Calculator output styles */
 #output {
     background-color: #333333;
     padding: 1px;
@@ -135,14 +145,17 @@ input {
     width: 80%;
     margin: auto;
     color: white;
-    font-family: Arial, sans-serif;
-    font-size: calc(1px + 1vw);
     border-color: orange;
     border-style: solid;
     border-width: 5px;
 }
 
+#output-content{
+    font-family: Arial, sans-serif;
+    font-size: calc(2px + 1vw);
+}
 
+/* Calculator container styles */
 #calculator {
     font-family: Arial, sans-serif;
     background-color: #333333;
@@ -152,9 +165,9 @@ input {
     padding: 10px;
     margin: auto;
     border: 5px solid white;
-
 }
 
+/* Calculator button row styles */
 #first-row {
     display: flex;
     flex-direction: row;
@@ -176,6 +189,7 @@ input {
     margin: 10px
 }
 
+/* Calculator button styles */
 button {
     width: 20%;
     aspect-ratio: 1 / 1;
@@ -188,26 +202,32 @@ button {
     cursor: pointer;
 }
 
+/* Color styles for when the cursor is hovering over it*/
 button:hover {
     background-color: darksalmon;
 }
 
+/* Color styles for when the button is clicked */
 button:active {
     background-color: lightsalmon;
 }
 
+/* Color style for the clear button */
 .clearButton {
     background-color: dimgray;
 }
 
+/* Color styles for when the cursor is hovering over it*/
 .clearButton:hover {
     background-color: #999999;
 }
 
+/* Color styles for when the button is clicked */
 .clearButton:active {
     background-color: darkgray;
 }
 
+/* Footer styles */
 footer {
     background-color: #222222;
     color: white;
@@ -217,27 +237,32 @@ footer {
     justify-content: space-evenly;
 }
 
+/* removing the hyperlink of the Credits and making it the same color as the rest of the footer */
 footer a {
     color: inherit;
     text-decoration: none;
 }
 
+/* Underlines the Credits when User hovers over with mouse */
 footer a:hover {
     text-decoration: underline;
 }
 
+/* Media query for responsive design */
 @media screen and (max-width: 900px) {
+    /* Change layout to single column */
     #content {
         width: 100%;
         height: 100%;
         flex-direction: column;
     }
 
+    /* Adjust navigation for mobile */
     nav {
         width: 100%;
     }
 
-    nav ul{
+    nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -259,6 +284,7 @@ footer a:hover {
         text-decoration: none;
     }
 
+    /* Adjust main content area for mobile */
     main p {
         margin: 2% 2%;
         font-size: calc(2px + 3vw);
@@ -267,9 +293,11 @@ footer a:hover {
     #calculator {
         max-width: 100%;
     }
+
     main {
         width: 100%;
     }
+
     #main {
         width: 100%;
         display: flex;
