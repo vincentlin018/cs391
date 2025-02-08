@@ -250,6 +250,10 @@ footer a:hover {
 
 /* Media query for responsive design */
 @media screen and (max-width: 900px) {
+    /* Adjust header alignment */
+    header {
+        align-items: center;
+    }
     /* Change layout to single column */
     #content {
         width: 100%;
