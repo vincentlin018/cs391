@@ -21,7 +21,7 @@ function checkAge() {
 
     if (errorMessage === "") {
         document.getElementById("main-content").style.display = "block";
-        document.getElementById("error-content").style.display = "git";
+        document.getElementById("error-content").style.display = "none";
     } else {
         document.getElementById("error-message").innerHTML = errorMessage;
 
