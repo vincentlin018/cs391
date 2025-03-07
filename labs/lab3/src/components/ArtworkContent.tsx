@@ -8,7 +8,7 @@ export default function ArtworkContent() {
 
     useEffect(() => {
         async function getArtworkInfo() {
-            const res = await fetch('https://api.artic.edu/api/v1/artworks/${id}');
+            const res = await fetch(`https://api.artic.edu/api/v1/artworks/${id}`);
             const jsonRes = await res.json();
             console.log(jsonRes)
             setArtwork(jsonRes.data);
@@ -22,7 +22,7 @@ export default function ArtworkContent() {
         <div>
             <h2>{artwork.title}</h2>
             <img
-                src={'https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg'}
+                src={`https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`}
                 alt={artwork.title}
                 width="80%"
             />
